@@ -1,0 +1,112 @@
+.contacts {
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__inner {
+        padding: 30px 0px;
+    }
+    &__items {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $md3 + px) {
+            flex-direction: column;
+        }
+    }
+    &__product-price {
+        position: relative;
+        @media (max-width: $md3 + px) {
+            width: 240px;
+            height: 380px;
+            margin: 0 auto;
+            & img {
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        @media (max-width: $md4 + px) {
+            margin: 0 0 auto 0;
+        }
+    }
+
+    &__new-price,
+    &__old-price {
+        position: absolute;
+        right: -40%;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 4;
+        @media (max-width: $md3 + px) {
+            right: -45%;
+            padding: 5px;
+        }
+        @media (max-width: $md4 + px) {
+            right: -20%;
+            padding: 10px;
+        }
+    }
+    &__new-price {
+        top: -20%;
+    }
+
+    &__new-price {
+        top: 0;
+        background-color: #32cd32;
+        animation: scale 3s infinite ease-in-out;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: -44%;
+            top: 0;
+            border-style: solid;
+            border-width: 26px 44px 26px 0;
+            border-color: transparent #32cd32 transparent transparent;
+            border-radius: 5px;
+            @media (max-width: $md3 + px) {
+                left: -30%;
+                top: 0;
+                border-width: 20px 30px 20px 0;
+            }
+            @media (max-width: $md4 + px) {
+                top: 5px;
+            }
+        }
+    }
+    &__old-price {
+        right: -45%;
+        top: 10%;
+        transform-origin: center right;
+        transform: rotate(325deg);
+        background: #ff0000;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: translateY(-50%);
+            transform: rotate(330deg);
+            background: #000;
+            border-radius: 4px;
+        }
+        @media (max-width: $md4 + px) {
+            top: 7%;
+        }
+    }
+}
+
+.price {
+    font-size: 21px;
+    font-weight: 700;
+    @media (max-width: $md4 + px) {
+        font-size: 16px;
+    }
+}

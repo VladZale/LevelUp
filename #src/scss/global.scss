@@ -1,0 +1,165 @@
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1270;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+*,
+*::after,
+*::before {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+body {
+    // overflow: hidden;
+}
+
+body._lock {
+    overflow: hidden !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+html,
+body {
+    min-width: 320px;
+    height: 100%;
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 18px;
+    line-height: 180%;
+    background-color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0px;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+section {
+    position: relative;
+    z-index: 4;
+    background-color: #fff;
+    padding: 50px 0px;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 320px;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+}
+
+.container {
+    max-width: $maxWidthContainer + px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    @media (max-width: $md1+px) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2+px) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3+px) {
+        max-width: none;
+        padding: 0px 10px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    color: #fff;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 700;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in;
+    background-color: #4b0082;
+    &:hover {
+        background: #37075a;
+    }
+    &:active {
+        transform: scale(0.98);
+    }
+    @media (max-width: $md2 + px) {
+        padding: 12px 0px;
+    }
+}
+
+.title {
+    font-size: 40px;
+    line-height: 115%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    @media (max-width: $md4 + px) {
+        font-size: 25px;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes Moving {
+    0%{
+        top:0%;
+    }
+    50%{
+        top:5%;
+    }
+    100%{
+        top:0%;
+    }
+}

@@ -1,0 +1,99 @@
+.promo {
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 680px) {
+            flex-direction: column;
+            align-items: baseline;
+        }
+        @media (max-width: $md4 + px) {
+            align-items: center;
+        }
+    }
+    &__info {
+        position: relative;
+        color: #fff;
+        margin-bottom: 35px;
+        font-size: 30px;
+        line-height: 130%;
+        padding: 10px 5px 10px 15px;
+        background-color: #780caa;
+        border-top-left-radius: 10px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 100%;
+            width: 0;
+            height: 0;
+
+            transform: rotate(180deg);
+            border-style: solid;
+            border-width: 49px 50px 49px 0;
+
+            border-color: transparent #780caa transparent transparent;
+            @media (max-width: 1440px) {
+                border-width: 37px 50px 37px 0;
+            }
+            @media (max-width: $md2 + px) {
+                border-width: 33px 50px 33px 0;
+            }
+            @media (max-width: $md4 + px) {
+                border-width: 33px 25px 33px 0;
+            }
+        }
+        span {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            bottom: -25px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 25px 25px 0;
+            border-color: transparent #611b81 transparent transparent;
+        }
+        @media (max-width: 1440px) {
+            font-size: 21px;
+        }
+        @media (max-width: $md2 + px) {
+            font-size: 17px;
+        }
+        @media (max-width: $md4 + px) {
+            font-size: 16px;
+
+            padding: 3px 5px 3px 10px;
+        }
+    }
+    &__item-img {
+        @media (max-width: $md2 + px) {
+            width: 400px;
+            height: 340px;
+        }
+        @media (max-width: $md3 + px) {
+            width: 260px;
+            height: 300px;
+            position: relative;
+            & img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: 680px) {
+            margin-left: auto;
+        }
+        @media (max-width: $md4 + px) {
+            margin: 0 auto;
+        }
+    }
+    &__btn {
+        @media (max-width: $md4 + px) {
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>LevelUp</title>
+</head>
+
+<body>
+    <div class="wrapper ">
+
+        <!-- Start Header -->
+        <header class="header lock-padding">
+            <div class="header__container container">
+                <div class="header__inner">
+                    <a class="logo header__logo" data-goto=".home" href="#">
+                        LevelUp
+                    </a>
+                    <div class="header__menu menu">
+                        <div class="menu__icon">
+                            <span></span>
+                        </div>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a data-goto=".home" href="#" class="menu__link header__link">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".product" href="#" class="menu__link header__link">
+                                        Состав продукта
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".reviews" href="#" class="menu__link header__link">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".promo" href="#" class="menu__link header__link">
+                                        Промо
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".contacts" href="#" class="menu__link header__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <main>
+
+            <!-- Start Section promo -->
+
+            <section class="home">
+
+                <div id="nubexDiv" class="overlay">
+                    <video id="nubexVideo" width="100%" height="auto" preload="auto" no-controls autoplay loop
+                        playsinline muted>
+                        <source src="./img/one.mp4" type="video/mp4">
+                        </source>
+                        <source src="./img/one.webm" type="video/webm">
+                        </source>
+
+                    </video>
+                </div>
+                <div class="home__container container">
+                    <div class="home__inner">
+                        <div class="home__items">
+                            <div class="home__item">
+                                <div class="home__item-img">
+                                    <img src="./img/prod.png" alt="product">
+                                </div>
+                                <div class="home__item-info">
+
+                                    <ul class="info">
+                                        <li class="info__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span></span>
+                                        </li>
+                                        <li class="info__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span></span>
+
+                                        </li>
+                                        <li class="info__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <span></span>
+
+                                        </li>
+                                        <a class="home__btn btn menu__link" data-goto=".form__body"
+                                            href="#">заказать</a>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1"
+                        d="M0,0L60,0C120,0,240,0,360,26.7C480,53,600,107,720,133.3C840,160,960,160,1080,165.3C1200,171,1320,181,1380,186.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                    </path>
+                </svg>
+            </section>
+
+            <!-- End Section Promo -->
+            <!-- Start Section Product -->
+
+            <section class="product">
+                <div class="product__container container">
+                    <h1 class="product__title title">Продукт</h1>
+                    <div class="product__inner">
+                        <div class="product__items">
+                            <div class="product__item">
+                                <div class="product__info start">
+                                    <div class="product__info-box">
+                                        <div class="product__info-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="240px" height="210px">
+                                            </picture>
+                                        </div>
+                                        <h2 class="product__info-title">Some Text</h2>
+                                    </div>
+                                    <div class="product__info-box">
+                                        <div class="product__info-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="240px" height="210px">
+                                            </picture>
+                                        </div>
+                                        <h2 class="product__info-title">Some Text</h2>
+                                    </div>
+                                    <div class="product__info-box">
+                                        <div class="product__info-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="240px" height="210px">
+                                            </picture>
+                                        </div>
+                                        <h2 class="product__info-title">Some Text</h2>
+                                    </div>
+                                </div>
+                                <div class=" product__img">
+                                    <picture>
+                                        <source type="image/webp" data-srcset="./img/prod.webp">
+                                        <img class="  lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="./img/prod.png" alt="" width="240px" height="210px">
+                                    </picture>
+                                </div>
+                                <div class="product__info end">
+                                    <div class="product__info-box">
+                                        <div class="product__info-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="240px" height="210px">
+                                            </picture>
+                                        </div>
+                                        <h2 class="product__info-title">Some Text</h2>
+                                    </div>
+                                    <div class="product__info-box">
+                                        <div class="product__info-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="240px" height="210px">
+                                            </picture>
+                                        </div>
+                                        <h2 class="product__info-title">Some Text</h2>
+                                    </div>
+                                    <div class="product__info-box">
+                                        <div class="product__info-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="240px" height="210px">
+                                            </picture>
+                                        </div>
+                                        <h2 class="product__info-title">Some Text</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__inner-btn">
+
+                        <a class="product__btn btn menu__link" data-goto=".form__body" href="#">заказать</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- End Section Product -->
+            <!-- Start Section Reviews -->
+
+            <section class="reviews">
+                <h1 class="reviews__title title">Отзывы</h1>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews__testimonialBox">
+                                <div class="reviews__content">
+                                    <p class="reviews__content-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus
+                                        doloremque ipsam natus ducimus placeat modi, odio dicta esse numquam reiciendis
+                                        repudiandae molestias in provident dolor non. Ratione, ab voluptas!
+                                    </p>
+                                    <div class="reviews__content-details">
+                                        <div class="reviews__content-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="110px" height="110px">
+                                            </picture>
+                                        </div>
+                                        <h3 class="reviews__content-name">Some Text <br><span>Vlad Zale</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__testimonialBox">
+                                <div class="reviews__content">
+                                    <p class="reviews__content-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus
+                                        doloremque ipsam natus ducimus placeat modi, odio dicta esse numquam reiciendis
+                                        repudiandae molestias in provident dolor non. Ratione, ab voluptas!
+                                    </p>
+                                    <div class="reviews__content-details">
+                                        <div class="reviews__content-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/newDoctor.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/newDoctor.png" alt="" width="110px" height="110px">
+                                            </picture>
+                                        </div>
+                                        <h3 class="reviews__content-name">Some Text <br><span>Vlad Zale</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__testimonialBox">
+                                <div class="reviews__content">
+                                    <p class="reviews__content-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus
+                                        doloremque ipsam natus ducimus placeat modi, odio dicta esse numquam reiciendis
+                                        repudiandae molestias in provident dolor non. Ratione, ab voluptas!
+                                    </p>
+                                    <div class="reviews__content-details">
+                                        <div class="reviews__content-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/prod.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/prod.png" alt="" width="110px" height="110px">
+                                            </picture>
+                                        </div>
+                                        <h3 class="reviews__content-name">Some Text <br><span>Vlad Zale</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__testimonialBox">
+                                <div class="reviews__content">
+                                    <p class="reviews__content-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus temporibus
+                                        doloremque ipsam natus ducimus placeat modi, odio dicta esse numquam reiciendis
+                                        repudiandae molestias in provident dolor non. Ratione, ab voluptas!
+                                    </p>
+                                    <div class="reviews__content-details">
+                                        <div class="reviews__content-img">
+                                            <picture>
+                                                <source type="image/webp" data-srcset="./img/newDoctor.webp">
+                                                <img class="  lazy"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                                    data-src="./img/newDoctor.png" alt="" width="110px" height="110px">
+                                            </picture>
+
+                                        </div>
+                                        <h3 class="reviews__content-name">Some Text <br><span>Vlad Zale</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="reviews__btn btn menu__link" data-goto=".form__body" href="#">заказать</a>
+
+            </section>
+
+            <!-- End Section Reviews -->
+            <!-- Start Section Promo -->
+
+            <section class="promo">
+                <div class="promo__container container">
+                    <div class="promo__inner">
+                        <div class="promo__items">
+                            <div class="promo__item">
+                                <div class="promo__item-inner">
+                                    <ul class="info">
+                                        <li class="promo__info">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.
+                                            <span></span>
+                                        </li>
+
+                                        <li class="promo__info">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.
+                                            <span></span>
+                                        </li>
+                                        <li class="promo__info">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.
+                                            <span></span>
+                                        </li>
+                                    </ul>
+                                    <a class="promo__btn btn menu__link" data-goto=".form__body" href="#">заказать</a>
+                                </div>
+                                <div class="promo__item-img">
+                                    <picture>
+                                        <source type="image/webp" data-srcset="./img/newDoctor.webp">
+                                        <img class="lazy"
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                            data-src="./img/newDoctor.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End Section Promo -->
+            <!-- Start Section Contacts -->
+
+            <section class="contacts">
+                <div class="contacts__container container">
+                    <h1 class="contacts__title title">До конца скидки осталось</h1>
+                    <div class="countdown">
+                        <div class="counter-day counter">
+                            <h3 class="day">Время</h3>
+                            <h3 class="time">День</h3>
+                        </div>
+                        <div class="counter-hour counter">
+                            <h3 class="hour">Время</h3>
+                            <h3 class="time">Часов</h3>
+                        </div>
+                        <div class="counter-minute counter">
+                            <h3 class="minute">Время</h3>
+                            <h3 class="time">Минут</h3>
+                        </div>
+                        <div class="counter-second counter">
+                            <h3 class="second">Время</h3>
+                            <h3 class="time">Секунд</h3>
+                        </div>
+                    </div>
+                    <div class="contacts__inner">
+                        <div class="contacts__items">
+                            <div class="contacts__product">
+                                <div class="contacts__product-price">
+                                    <img src="./img/prod.png" alt="">
+                                    <div class="contacts__new-price">
+                                        <p class="price">
+                                            <span>
+                                                1000 &#8381;
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="contacts__old-price">
+                                        <p class="price">
+                                            <span>
+                                                1500 &#8381;
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form id="form" action="#" class="form__body">
+                                <h1 class="form__title">Заказать</h1>
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">Имя*:</label>
+
+                                    <div class="form__input-box">
+                                        <input id="formName" type="text" name="name" class="form__input _req">
+                                        <div class="tooltip tooltip__left">
+                                            <div class="tooltip__element">?</div>
+                                            <div class="tooltip__info">
+                                                <h2>Пример:</h2>
+                                                <hr>
+                                                <p>Иванов Иван </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__item">
+                                    <label for="formPhone" class="form__label">Телефон*:</label>
+                                    <div class="form__input-box">
+                                        <input id="formPhone" type="number" name="phone" class="form__input _req ">
+                                        <div class="tooltip tooltip__left">
+                                            <div class="tooltip__element">?</div>
+                                            <div class="tooltip__info">
+                                                <h2>Пример:</h2>
+                                                <hr>
+                                                <p>+7(999)-999-99-99 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__item">
+                                    <div class="checkbox">
+                                        <input id="formAgreement" checked type="checkbox" name="agreement"
+                                            class="checkbox__input _req">
+                                        <label for="formAgreement" class="checkbox__label ">I'm accept on proceessing
+                                            your personal
+                                            date and conformity with <a href="">Conditions</a>*</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="form__button">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- End Section Contacts -->
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer__container container">
+                    <div class="footer__inner">
+                        2021. Created by Vlad Zale.
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <div id="form" class="popup popup__error">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="btn-close close-popup"></button>
+                <p>Проверьте правильность введенных данных!</p>
+            </div>
+        </div>
+    </div>
+    <div id="form" class="popup popup__error-send">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="btn-close close-popup"></button>
+                <p>Произошла ошибка форма не отправлена, проверьте подлючение к <span class="line">интернету!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="form" class="popup popup__sending">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="btn-close close-popup"></button>
+                <p>Форма отправляется, ожидайте</p>
+            </div>
+        </div>
+    </div>
+    <div id="form" class="popup popup__success-send">
+        <div class="popup__body">
+            <div class="popup__content">
+                <button class="btn-close close-popup"></button>
+                <p>Форма успешно отправлена!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
